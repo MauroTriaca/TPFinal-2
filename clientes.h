@@ -24,6 +24,19 @@ typedef struct
     int baja;///0(activado o 1(elimando)
 } stCliente;
 
+stCliente cargaUnClienteConId();///carga manual de cliente
+///carga automatica de cliente
+int rangoRandom(int min,int max);
+int getNroCliente();
+int getMovilCliente();
+void getNombre(char n[]);
+void getApellido(char a[]);
+int getDNI();
+void getCalle(char c[]);
+int getCalleNro();
+stCliente cargoRegistroClienteRandom();
+///mostrar el cliente con id
+void mostrarUnClienteId(stCliente c);
 
 
 #endif // CLIENTES_H_INCLUDED
