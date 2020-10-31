@@ -31,6 +31,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename=".gitignore" />
 		<Unit filename="clientes.c">
 			<Option compilerVar="CC" />
 		</Unit>
