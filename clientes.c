@@ -1,4 +1,12 @@
 #include "clientes.h"
+
+/*********************************************************************//**
+*
+* \brief Carga un cliente por teclado
+* \param no tiene parametros
+* \return Retorna el cliente cargado
+*
+**************************************************************************/
 stCliente cargaUnClienteConId()
 {
     stCliente c;
@@ -60,6 +68,13 @@ stCliente cargaUnClienteConId()
     return c;
 }
 
+/*********************************************************************//**
+*
+* \brief Muestra un cliente
+* \param Recibe el cliente
+* \return es void
+*
+**************************************************************************/
 void mostrarUnClienteId(stCliente c)
 {
 
@@ -76,11 +91,25 @@ void mostrarUnClienteId(stCliente c)
     printf("\n-----------------------\n");
 }
 
+/*********************************************************************//**
+*
+* \brief Genera un numero random entre el minimo y el maximo
+* \param Recibe el minimo y el maximo
+* \return Retorna el numero random
+*
+**************************************************************************/
 int rangoRandom(int min,int max)
 {
     return rand()%(max-min)+min;
 }
 
+/*********************************************************************//**
+*
+* \brief Crea un numero de cliente
+* \param no tiene parametros
+* \return Retorna el numero
+*
+**************************************************************************/
 int getNroCliente(){
     int repetido;
     int validacion;
@@ -92,6 +121,13 @@ int getNroCliente(){
 return repetido;
 }
 
+/*********************************************************************//**
+*
+* \brief Funcion que genera un numero de Movil.
+* \param no tiene parametros
+* \return el numero de Movil.
+*
+**************************************************************************/
 int getMovilCliente(){
   int repetido;
   int validacion;
@@ -166,6 +202,13 @@ int getCalleNro(){
     return rangoRandom(50,10000);
 }
 
+/*********************************************************************//**
+*
+* \brief Crea un cliente automico
+* \param no tiene parametros
+* \return Retorna el ciente cargado
+*
+**************************************************************************/
 stCliente cargoRegistroClienteRandom(){
     stCliente c;
 

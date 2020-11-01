@@ -1,5 +1,12 @@
 #include "consumos.h"
 
+/*********************************************************************//**
+*
+* \brief Carga un consumo a un cliente
+* \param  no tiene parametros
+* \return Retorna el consumo cargado
+*
+**************************************************************************/
 stConsumo cargaConsumoCliente()
 {
     stConsumo g;
@@ -61,6 +68,13 @@ stConsumo cargaConsumoCliente()
     return g;
 }
 
+/*********************************************************************//**
+*
+* \brief Carga un consumo de manera automatica y random
+* \param no tiene paremetros
+* \return Retorna el consumo
+*
+**************************************************************************/
 stConsumo cargaConsumoAuto(){
 
     stConsumo g;
@@ -78,6 +92,13 @@ stConsumo cargaConsumoAuto(){
  return g;
 }
 
+/*********************************************************************//**
+*
+* \brief Muestra un consumo
+* \param Recibe el consumo
+* \return es void
+*
+**************************************************************************/
 void mostrarUnConsumo(stConsumo g)
 {
 
@@ -91,3 +112,4 @@ void mostrarUnConsumo(stConsumo g)
     printf("\nBaja.............:%d\n",g.baja);
     printf("\n-----------------------\n");
 }
+
