@@ -31,11 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename=".gitignore" />
 		<Unit filename="clientes.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="clientes.h" />
+		<Unit filename="consumos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="consumos.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
