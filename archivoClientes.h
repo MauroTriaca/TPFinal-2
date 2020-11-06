@@ -17,6 +17,12 @@ int buscaUltimoId();
 int buscaUnClienteDNIArchivo(int dni);
 int buscaUnNroClienteArchivo(int nroCliente);
 int buscaUnNroMovilArchivo(int movil);
+///devuelven el cliente
+stCliente buscaClientePorApellido(char apellido[]);
+stCliente buscaClientePorDni(int dni);
+
+int archivo2arrayBaja(stCliente a,stCliente c[DIM_CLI]);
+int archivo2arrayActivos(stCliente a,stCliente c[DIM_CLI]);
 
 
 #endif // ARCHIVOCLIENTES_H_INCLUDED

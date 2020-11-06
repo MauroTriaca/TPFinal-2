@@ -299,6 +299,114 @@ int buscaUnNroMovilArchivo(int movil)
     return flag;
 }
 
+/*********************************************************************//**
+*
+* \brief busca un cliente por apellido en el archivp
+* \param recibe el char apellido (string)
+* \return el cliente con ese apellido (si existe)
+*
+**************************************************************************/
+stCliente buscaClientePorApellido(char apellido[])
+{
+    int flag=0;
+    stCliente c;
+    FILE *archi = fopen(AR_CLIENTES,"rb");
+    if(archi)
+    {
+        while(flag == 0 && fread(&c, sizeof(stCliente), 1,archi) > 0)
+        {
+            if(strcmp(c.apellido,apellido)==0)
+            {
+                flag=1;
+            }
+        }
+        fclose(archi);
+    }
+
+    if(flag==0)
+    {
+        c.id=-1;
+    }
+
+    return c;
+}
+/*********************************************************************//**
+*
+* \brief busca un cliente por dni en el archivp
+* \param recibe el dni (int)
+* \return el cliente con ese dni (si existe)
+*
+**************************************************************************/
+stCliente buscaClientePorDni(int dni)
+{
+    int flag=0;
+    stCliente c;
+    FILE *archi = fopen(AR_CLIENTES, "rb");
+    if(archi)
+    {
+        while(flag == 0 && fread(&c, sizeof(stCliente), 1,archi) > 0)
+        {
+            if(c.dni==dni)
+            {
+                flag=1;
+            }
+        }
+        fclose(archi);
+    }
+    if(flag==0)
+    {
+        c.id=-1;
+    }
+
+    return c;
+}
+
+/*********************************************************************//**
+*
+* \brief pasa de el archivo clientes solo los clientes que estan "debaja" a un arreglo.
+* \param  el cliente, y un arreglo de clientes
+* \return los validos
+*
+**************************************************************************/
+int archivo2arrayBaja(stCliente a,stCliente c[DIM_CLI])
+{
+ int v=0;
+ FILE *pArchClientes = fopen(AR_CLIENTES,"rb");
+ if(pArchClientes){
+    while(fread(&a,sizeof(stCliente),1,pArchClientes)>0){
+        if(a.baja == 1){
+            c[v]=a;
+            v++;
+        }
+    }
+    fclose(pArchClientes);
+ }
+
+ return v;
+}
+
+/*********************************************************************//**
+*
+* \brief pasa de el archivo clientes solo los clientes que estan "activos" a un arreglo.
+* \param el cliente y un arreglo de clientes
+* \return los validos
+*
+**************************************************************************/
+int archivo2arrayActivos(stCliente a,stCliente c[DIM_CLI])
+{
+ int v=0;
+ FILE *pArchClientes = fopen(AR_CLIENTES,"rb");
+ if(pArchClientes){
+    while(fread(&a,sizeof(stCliente),1,pArchClientes)>0){
+        if(a.baja == 0){
+            c[v] = a;
+            v++;
+        }
+    }
+    fclose(pArchClientes);
+ }
+ return v;
+}
 
 
 
