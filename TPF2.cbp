@@ -55,9 +55,21 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="crudConsumos.h" />
+		<Unit filename="gotoxy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gotoxy.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="ordenamientosYestadisticas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ordenamientosYestadisticas.h" />
+		<Unit filename="utilidades.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utilidades.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
