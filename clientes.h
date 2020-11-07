@@ -8,8 +8,9 @@
 #include "gotoxy.h"
 #define ESC 27
 #define DIM_CLI 100
-#define AR_CLIENTES "clientes.dat"
 
+#define AR_CLIENTES "clientes.dat"
+#define AR_CONSUMOS "consumos.dat"
 
 typedef struct
 {

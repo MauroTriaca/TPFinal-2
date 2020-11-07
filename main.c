@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define AR_CLIENTES "clientes.dat"
+#define AR_CONSUMOS "consumos.dat"
+
 #include "clientes.h"
 #include "consumos.h"
 #include "archivoClientes.h"
@@ -268,7 +271,7 @@ int main()
                 muestraConsumos(arregloDeDias,validosDias);///cuando tengamos que hacer la matriz, va a servir mucho tener copias.
                 break;
                 case 'a':
-                    CargoMatrix(FIL,COL,g);
+
                     break;
                 }
 
@@ -281,11 +284,7 @@ int main()
     while(opcionPricipal!=ESC);
 
     return 0;
-}
 
-
-
-    return 0;
 }
 
 void menuPrincipal()

@@ -150,7 +150,8 @@ void cargaConsumosTeclado()
 stConsumo cargarConsumosRandom()
 {
     stConsumo g;
-
+    stConsumo gRead;
+    int pos;
     g = cargaConsumoAuto();
     pos=existenConsumos(g.mes,g.dia,g.idCliente,g.baja);
 

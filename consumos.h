@@ -1,6 +1,8 @@
 #ifndef CONSUMOS_H_INCLUDED
 #define CONSUMOS_H_INCLUDED
 #include "clientes.h"
+#define AR_CLIENTES "clientes.dat"
+#define AR_CONSUMOS "consumos.dat"
 
 typedef struct
 {

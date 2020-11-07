@@ -306,7 +306,7 @@ int archivo2arrayDatos(stConsumo a,int c[DIM_CLI],int dato){
 **************************************************************************/
 int sumadatos1(stConsumo a){
  int dato=1;
- stConsumo c[DIM_CLI];
+ int c[DIM_CLI];
  int suma=0;
  int v=0;
  FILE *pArchConsumos = fopen(AR_CONSUMOS,"rb");
@@ -327,7 +327,7 @@ int sumadatos1(stConsumo a){
 **************************************************************************/
 int sumadatos2(stConsumo a){
  int dato=2;
- stConsumo c[DIM_CLI];
+ int c[DIM_CLI];
  int suma=0;
  int v=0;
  FILE *pArchConsumos = fopen(AR_CONSUMOS,"rb");
@@ -348,7 +348,7 @@ int sumadatos2(stConsumo a){
 **************************************************************************/
 int sumadatos3(stConsumo a){
  int dato=3;
- stConsumo c[DIM_CLI];
+ int c[DIM_CLI];
  int suma=0;
  int v=0;
  FILE *pArchConsumos = fopen(AR_CONSUMOS,"rb");
@@ -369,7 +369,7 @@ int sumadatos3(stConsumo a){
 **************************************************************************/
 int sumadatos4(stConsumo a){
  int dato=4;
- stConsumo c[DIM_CLI];
+ int  c[DIM_CLI];
  int suma=0;
  int v=0;
  FILE *pArchConsumos = fopen(AR_CONSUMOS,"rb");
@@ -390,10 +390,9 @@ int sumadatos4(stConsumo a){
 **************************************************************************/
 int sumadatos5(stConsumo a){
  int dato = 5;
- stConsumo c[DIM_CLI];
+ int c[DIM_CLI];
  int suma=0;
  int v=0;
- float porcentaje=0;
  FILE *pArchConsumos = fopen(AR_CONSUMOS,"rb");
  if(pArchConsumos){
       v = archivo2arrayDatos(a,c,dato);
@@ -412,7 +411,7 @@ int sumadatos5(stConsumo a){
 **************************************************************************/
 int sumadatos6(stConsumo a){
  int dato = 6;
- stConsumo c[DIM_CLI];
+ int c[DIM_CLI];
  int suma=0;
  int v=0;
  FILE *pArchConsumos = fopen(AR_CONSUMOS,"rb");
@@ -487,7 +486,7 @@ int pasarArraySumaDatos(stConsumo a,int arraySumas[],int v){
 *
 **************************************************************************/
 int sumadatosAll(stConsumo a){
- stConsumo c[DIM_CLI];
+ int c[DIM_CLI];
  int suma=0;
  int v=0;
  FILE *pArchConsumos = fopen(AR_CONSUMOS,"rb");
@@ -559,7 +558,7 @@ int sumararray(int a[],int validos){
 *
 **************************************************************************/
 float calcularporcentaje2(stConsumo a,int dato){
- stConsumo c[DIM_CLI];
+ int c[DIM_CLI];
  int suma=0;
  int v=0;
  float porcentaje=0;
@@ -860,7 +859,7 @@ return posMayor;
 int cuentaConsumosActivosMes(int mes){
 stConsumo c;
 FILE *archi=fopen(AR_CONSUMOS,"rb");
-int i=0;
+
 int contador=0;
 if(archi){
     while(fread(&c,sizeof(stConsumo),1,archi)>0){
@@ -884,7 +883,7 @@ if(archi){
 int cuentaConsumosInactivosMes(int mes){
 stConsumo c;
 FILE *archi=fopen(AR_CONSUMOS,"rb");
-int i=0;
+
 int contador=0;
 if(archi){
     while(fread(&c,sizeof(stConsumo),1,archi)>0){

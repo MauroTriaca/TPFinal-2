@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1604724077 source:c:\users\administrador\desktop\tpf2\archivoclientes.c
+	"archivoClientes.h"
+
+1604723822 c:\users\administrador\desktop\tpf2\archivoclientes.h
+	"clientes.h"
+
+1604779819 c:\users\administrador\desktop\tpf2\clientes.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	"gotoxy.h"
+
+1491399896 c:\users\administrador\desktop\tpf2\gotoxy.h
+
+1604779875 source:c:\users\administrador\desktop\tpf2\archivoconsumos.c
+	"archivoConsumos.h"
+
+1604772768 c:\users\administrador\desktop\tpf2\archivoconsumos.h
+	"clientes.h"
+	"consumos.h"
+
+1604779805 c:\users\administrador\desktop\tpf2\consumos.h
+	"clientes.h"
+
+1604189380 source:c:\users\administrador\desktop\tpf2\clientes.c
+	"clientes.h"
+
+1604188926 source:c:\users\administrador\desktop\tpf2\consumos.c
+	"consumos.h"
+
+1604772164 source:c:\users\administrador\desktop\tpf2\crudclientes.c
+	"crudClientes.h"
+
+1604772160 c:\users\administrador\desktop\tpf2\crudclientes.h
+	"archivoClientes.h"
+
+1604772774 source:c:\users\administrador\desktop\tpf2\crudconsumos.c
+	"crudConsumos.h"
+
+1604772846 c:\users\administrador\desktop\tpf2\crudconsumos.h
+	"archivoConsumos.h"
+
+1491400450 source:c:\users\administrador\desktop\tpf2\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1604779912 source:c:\users\administrador\desktop\tpf2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"clientes.h"
+	"consumos.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+	"crudClientes.h"
+	"crudConsumos.h"
+	"ordenamientosYestadisticas.h"
+	"utilidades.h"
+
+1604779100 c:\users\administrador\desktop\tpf2\ordenamientosyestadisticas.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604775877 c:\users\administrador\desktop\tpf2\utilidades.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604775859 source:c:\users\administrador\desktop\tpf2\utilidades.c
+	"utilidades.h"
+
+1604780111 source:c:\users\administrador\desktop\tpf2\ordenamientosyestadisticas.c
+	"ordenamientosYestadisticas.h"
+
