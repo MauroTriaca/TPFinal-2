@@ -24,5 +24,10 @@ stCliente buscaClientePorDni(int dni);
 int archivo2arrayBaja(stCliente a,stCliente c[DIM_CLI]);
 int archivo2arrayActivos(stCliente a,stCliente c[DIM_CLI]);
 
+///verifica si existe el cliente buscado por id
+int buscaCliente(int id);
+///busca la posicion el cliente si existe
+int buscaPosicion(int id);
+stCliente traeCliente(int id);
 
 #endif // ARCHIVOCLIENTES_H_INCLUDED

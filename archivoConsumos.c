@@ -328,3 +328,37 @@ int buscaUltimoIdConsumos()
     }
 }
 
+
+ /*********************************************************************//**
+*
+* \brief trae un consumo buscado por id
+* \param recibe el id del consumo
+* \return retorna el consumo si existe
+*
+**************************************************************************/
+stConsumo traeConsumo(int id)
+{
+    stConsumo g;
+    int flag = 0;
+    FILE  *pArchConsumo = fopen(AR_CONSUMOS,"rb");
+    if(pArchConsumo)
+    {
+        while(flag==0 && fread(&g,sizeof(stConsumo),1,pArchConsumo)>0)
+        {
+            if(g.id == id)
+            {
+                flag = 1;
+            }
+        }
+        fclose(pArchConsumo);
+    }
+    if(flag==1){
+        return g;
+    }
+    else{
+       printf("\nError,ingrese id nuevamente.\n");
+       scanf("%d",&id);
+       traeConsumo(id);
+    }
+}
+

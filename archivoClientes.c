@@ -408,6 +408,93 @@ int archivo2arrayActivos(stCliente a,stCliente c[DIM_CLI])
  return v;
 }
 
+/*********************************************************************//**
+*
+* \brief Busca un cliente por ID
+* \param ID de cliente a buscar
+* \return 1 si existe, -1 si no existe
+*
+**************************************************************************/
+int buscaCliente(int id)
+{
+    int flag=-1;
+    stCliente c;
+    FILE *pArchClientes = fopen(AR_CLIENTES, "rb");
+    if(pArchClientes)
+    {
+        while(flag == -1 && fread(&c, sizeof(stCliente), 1, pArchClientes) > 0)
+        {
+            if(c.id==id)
+            {
+                flag=1;
+            }
+        }
+        fclose(pArchClientes);
+    }
+    return flag;
+}
+
+/*********************************************************************//**
+*
+* \brief Busca posicion del cliente por ID
+* \param ID de cliente a buscar
+* \return -1 si no existe - Retorna la posicion del cliente si existe
+*
+**************************************************************************/
+int buscaPosicion(int id)
+{
+    int pos=-1;
+    stCliente c;
+    FILE *pArchClientes = fopen(AR_CLIENTES,"rb");
+    if(pArchClientes)
+    {
+        while(pos == -1 && fread(&c, sizeof(stCliente), 1, pArchClientes) > 0)
+        {
+            if(c.id == id)
+            {
+                pos = ftell(pArchClientes)/sizeof(stCliente)-1;
+            }
+        }
+        fclose(pArchClientes);
+    }
+
+    return pos;
+}
+
+/*********************************************************************//**
+*
+* \brief Retorna el cliente a buscar
+* \param Ingresa la ID del cliente a buscar
+* \return retorna el cliente si existe
+*
+**************************************************************************/
+stCliente traeCliente(int id)
+{
+    stCliente c;
+    int flag = 0;
+    FILE *pArchClientes = fopen(AR_CLIENTES,"rb");
+    if(pArchClientes)
+    {
+        while(flag==0 && fread(&c,sizeof(stCliente),1,pArchClientes)>0)
+        {
+            if(c.id == id)
+            {
+                flag = 1;
+            }
+        }
+        fclose(pArchClientes);
+    }
+
+    if(flag==1){
+    return c;
+    }
+    else{
+        printf("Id:%d no Existente.",id);
+        printf("\nIngrese id correcto:");
+        scanf("%d",&id);
+        traeCliente(id);
+    }
+}
 
 
 
