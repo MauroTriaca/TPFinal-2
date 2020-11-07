@@ -17,6 +17,8 @@ int buscaUltimoIdConsumos();
 
 void mostrarArchivoConsumos();
 
+int buscaPosicionConsumo(int id);
+
 stConsumo traeConsumo(int id);
 
 

@@ -328,6 +328,32 @@ int buscaUltimoIdConsumos()
     }
 }
 
+ /*********************************************************************//**
+*
+* \brief busca la posicion del consumo
+* \param recibe una id de consumo
+* \return la posicion si existe, si no existe -1
+*
+**************************************************************************/
+int buscaPosicionConsumo(int id)
+{
+    int pos=-1;
+    stConsumo c;
+    FILE *pArchConsumo = fopen(AR_CONSUMOS,"rb");
+    if(pArchConsumo)
+    {
+        while(pos == -1 && fread(&c, sizeof(stConsumo), 1, pArchConsumo) > 0)
+        {
+            if(c.id == id)
+            {
+                pos = ftell(pArchConsumo)/sizeof(stConsumo)-1;
+            }
+        }
+        fclose(pArchConsumo);
+    }
+
+    return pos;
+}
 
  /*********************************************************************//**
 *

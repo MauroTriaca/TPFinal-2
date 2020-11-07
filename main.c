@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "clientes.h"
 #include "consumos.h"
+#include "archivoClientes.h"
+#include "archivoConsumos.h"
+#include "crudClientes.h"
+#include "crudConsumos.h"
+
 
 
 int main()
