@@ -6,7 +6,8 @@
 #include "archivoConsumos.h"
 #include "crudClientes.h"
 #include "crudConsumos.h"
-
+#include "ordenamientosYestadisticas.h"
+#include "utilidades.h"
 
 
 int main()

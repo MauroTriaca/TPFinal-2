@@ -47,6 +47,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="consumos.h" />
+		<Unit filename="crudClientes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crudClientes.h" />
+		<Unit filename="crudConsumos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crudConsumos.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
