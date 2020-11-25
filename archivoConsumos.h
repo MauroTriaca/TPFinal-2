@@ -6,8 +6,10 @@
 void cargaArchivoConsumos(stConsumo g);
 void cargaConsumosTeclado();
 
- void cargaConsumos(int veces);
+void cargaConsumos(int veces);
+void cargaConsumosEspecificos(int id,int veces);
 stConsumo cargarConsumosRandom();
+stConsumo cargarConsumosRandomPorID(int id);
 
 int CalcularDias(int mes,int anio);
 stConsumo buscaConsumoPorFecha(int mes,int dia);

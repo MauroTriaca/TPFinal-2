@@ -462,3 +462,102 @@
 1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\utilidades.c
 	"utilidades.h"
 
+1606310708 source:c:\users\mauro\desktop\tpf2\arbol.c
+	"arbol.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\arbol.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"clientes.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"ArchivoClientes.h"
+	"ArchivoConsumos.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\archivoclientes.h
+	"clientes.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\clientes.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	"gotoxy.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\gotoxy.h
+
+1606318669 c:\users\mauro\desktop\tpf2\archivoconsumos.h
+	"clientes.h"
+	"consumos.h"
+
+1606318879 c:\users\mauro\desktop\tpf2\consumos.h
+	"clientes.h"
+
+1606310708 source:c:\users\mauro\desktop\tpf2\archivoclientes.c
+	"archivoClientes.h"
+
+1606319007 source:c:\users\mauro\desktop\tpf2\archivoconsumos.c
+	"archivoConsumos.h"
+
+1606310708 source:c:\users\mauro\desktop\tpf2\clientes.c
+	"clientes.h"
+
+1606319005 source:c:\users\mauro\desktop\tpf2\consumos.c
+	"consumos.h"
+
+1606310708 source:c:\users\mauro\desktop\tpf2\crudclientes.c
+	"crudClientes.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\crudclientes.h
+	"archivoClientes.h"
+	"utilidades.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\utilidades.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\crudconsumos.h
+	"archivoConsumos.h"
+
+1606310708 source:c:\users\mauro\desktop\tpf2\crudconsumos.c
+	"crudConsumos.h"
+
+1606310708 source:c:\users\mauro\desktop\tpf2\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1606310708 source:c:\users\mauro\desktop\tpf2\lista.c
+	"lista.h"
+
+1606310708 source:c:\users\mauro\desktop\tpf2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"clientes.h"
+	"consumos.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+	"crudClientes.h"
+	"crudConsumos.h"
+	"ordenamientosYestadisticas.h"
+	"utilidades.h"
+	"lista.h"
+	"arbol.h"
+
+1606310708 c:\users\mauro\desktop\tpf2\ordenamientosyestadisticas.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1606310708 source:c:\users\mauro\desktop\tpf2\ordenamientosyestadisticas.c
+	"ordenamientosYestadisticas.h"
+
+1606310708 source:c:\users\mauro\desktop\tpf2\utilidades.c
+	"utilidades.h"
+

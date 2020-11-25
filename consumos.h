@@ -17,6 +17,7 @@ typedef struct
 
 stConsumo cargaConsumoCliente(); ///carga por teclado de un consumo
 stConsumo cargaConsumoAuto();///carga automatica un consumo, todo random
+stConsumo cargaConsumoAutoRecibiendoID(int id);///carga automatica un consumo, todo random recibiendo la id
 void mostrarUnConsumo(stConsumo g);
 
 

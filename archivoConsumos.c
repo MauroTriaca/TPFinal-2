@@ -140,6 +140,66 @@ void cargaConsumosTeclado()
 
  }
 
+  /*********************************************************************//**
+*
+* \brief carga la cantidad que quieras consumos cargados de forma automatica en el archivo a un cliente especifico
+* \param la id de cliente y las cantidad de consumos que quieras(veces que se repite la carga de uno)
+* \return es void
+*
+**************************************************************************/
+ void cargaConsumosEspecificos(int id,int veces)
+{
+
+    stConsumo g;
+    stConsumo gRead;
+    int pos;
+    int idTotal;
+
+    idTotal=buscaUltimoIdConsumos()+1;
+
+    printf("\nCarga de Consumos:\n");
+
+    for(int i=0;i<veces;i++)
+    {
+        system("cls");
+
+
+         g=cargarConsumosRandomPorID(id);
+         pos=existenConsumos(g.mes,g.dia,g.idCliente,g.baja);
+
+       if(pos>-1) {
+        FILE *archi=fopen(AR_CONSUMOS,"r+b");
+       if(archi){
+        fseek(archi,sizeof(stConsumo)*pos,SEEK_SET);
+        fread(&gRead,sizeof(stConsumo),1,archi);
+        gRead.datosConsumidos=gRead.datosConsumidos+g.datosConsumidos;
+
+        fseek(archi,sizeof(stConsumo)*(-1),SEEK_CUR);
+        g.datosConsumidos=gRead.datosConsumidos;
+
+        fwrite(&gRead,sizeof(stConsumo),1,archi);
+        fclose(archi);
+       }
+    }
+    else{
+        FILE *archi=fopen(AR_CONSUMOS,"a+b");
+       if(archi){
+         idTotal++;
+         g.id=idTotal;
+         fwrite(&g,sizeof(stConsumo),1,archi);
+        fclose(archi);
+       }
+    }
+        ///primero se carga el consumo y luego se guarda en el archivo de consumos
+
+        fflush(stdin);
+        system("cls");
+    }
+    printf("\nCargados Exitosamente\n");
+
+ }
+
+
  /*********************************************************************//**
 *
 * \brief carga un consumo random acumulando si existe uno previametne
@@ -153,6 +213,44 @@ stConsumo cargarConsumosRandom()
     stConsumo gRead;
     int pos;
     g = cargaConsumoAuto();
+    pos=existenConsumos(g.mes,g.dia,g.idCliente,g.baja);
+
+    if(pos>-1){
+       FILE *archi=fopen(AR_CONSUMOS,"r+b");
+       if(archi) {
+        fseek(archi,sizeof(stConsumo)*pos,SEEK_SET);
+        fread(&g,sizeof(stConsumo),1,archi);
+        gRead.datosConsumidos=gRead.datosConsumidos+g.datosConsumidos;
+        ///si no anda probar anadiendole el otro fseek y una lectura.
+        fclose(archi);
+       }
+    }
+    else{
+        FILE *archiAux=fopen(AR_CONSUMOS,"ab");
+        if(archiAux){
+         g.id=buscaUltimoIdConsumos()+1;
+         fclose(archiAux);
+        }
+    }
+
+    g.baja=0;
+
+    return g;
+}
+
+ /*********************************************************************//**
+*
+* \brief carga un consumo random a un cliente acumulando si existe uno previamente
+* \param recibe el id
+* \return el consumo
+*
+**************************************************************************/
+stConsumo cargarConsumosRandomPorID(int id)
+{
+    stConsumo g;
+    stConsumo gRead;
+    int pos;
+    g = cargaConsumoAutoRecibiendoID(id);
     pos=existenConsumos(g.mes,g.dia,g.idCliente,g.baja);
 
     if(pos>-1){

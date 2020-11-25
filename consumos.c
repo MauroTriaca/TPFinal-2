@@ -94,6 +94,29 @@ stConsumo cargaConsumoAuto(){
 
 /*********************************************************************//**
 *
+* \brief Carga un consumo de manera automatica y random a un cliente
+* \param recibe la id del cliente
+* \return Retorna el consumo
+*
+**************************************************************************/
+stConsumo cargaConsumoAutoRecibiendoID(int id){
+
+    stConsumo g;
+
+    int dia;
+
+    g.idCliente = id;
+
+    g.anio = 2020;
+    g.mes = rangoRandom(1,7);
+    dia = CalcularDias(g.mes,g.anio);
+    g.dia = rangoRandom(1,dia);
+    g.datosConsumidos = rangoRandom(30,1000);
+
+ return g;
+}
+/*********************************************************************//**
+*
 * \brief Muestra un consumo
 * \param Recibe el consumo
 * \return es void

@@ -21,6 +21,7 @@ void Menu();
 void Submenu();
 void consumoMenu();
 void centrar_Texto(const char *texto, int y);
+void cargar50consumos();
 
 void menuDeARDL();
 
@@ -200,6 +201,8 @@ int main()
                     cargaConsumosTeclado();
                     break;
                 case '2':
+                    cargar50consumos();
+                    printf("\nSe cargaron automaticamente 50 consumos a  cada cliente, si quiere mas siga la ejecucion\n");
                     printf("\nIngrese la Cantidad de consumos que quiera crear: ");
                     scanf("%d",&veces);
                     centrar_Texto("PRESIONE UNA TECLA Y ESPERE A QUE TERMINE DE CARGAR\n\n",8);
@@ -379,7 +382,7 @@ void consumoMenu()
     printf("\n\t\tCONSUMOS\n");
 
     printf("\n1-Cargar consumos Por Teclado\n");
-    printf("\n2-Cargar Consumos Aleatorios\n");
+    printf("\n2-Cargar 50 Consumos Aleatorios a todos los clientes y luego cargar mas\n");
     printf("\n3-Mostrar todos los consumos\n");
     printf("\n4-Buscar Un Cliente por Fecha\n");
     printf("\n5-Cuenta Consumos\n");
@@ -387,7 +390,6 @@ void consumoMenu()
     printf("\n7-Mostrar consumos por mes\n");
     printf("\n8-Estadisticas Consumos\n");
     printf("\n9-Ordenar Consumos por dia\n");
-    printf("\na-Matriz muestra consumo activos y inactivos\n");
     printf("\nPresione ESC para Salir\n");
 
 
@@ -424,3 +426,16 @@ void menuDeARDL()
 
 }
 
+void cargar50consumos(){
+     int veces = 50;
+     stCliente cli;
+     FILE* archi = fopen(AR_CLIENTES, "rb");
+
+     if(archi){
+        while(fread(&cli, sizeof(stCliente), 1, archi)>0){
+            cargaConsumosEspecificos(cli.id, veces);
+        }
+        fclose(archi);
+     }
+
+}
