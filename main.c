@@ -21,13 +21,15 @@ void Menu();
 void Submenu();
 void consumoMenu();
 void centrar_Texto(const char *texto, int y);
-void cargar50consumos();
 
 void menuDeARDL();
+
+
 
 int main()
 {
     nodoArbol* ardl = inicArbol();
+    nodoArbol* arbolAux = inicArbol();
     float promedio;
     int cantRegistros;
     int dato;
@@ -36,6 +38,8 @@ int main()
     stCliente a;
     stConsumo g;
 
+    ardl = cliente2Arbol(ardl);
+    ardl = asignaConsumosArbol(ardl);
 
 
     stConsumo consumoArray[DIM_CLI];
@@ -295,13 +299,14 @@ int main()
                 switch(opcionARDL){
                     case '1':
                     printf("\nArbol de listas");
-                    ardl = cliente2Arbol(ardl);
-                    ardl = asignaConsumosArbol(ardl);
                     preorder(ardl);
                     break;
 
                     case '2':
-
+                    printf("\nIngrese id de cliente:");
+                    scanf("%d",&dato);
+                    arbolAux = buscaClienteEnArbol(ardl,dato);
+                    mostrarNodoArdl(arbolAux);
                     break;
 
                     case '3':
@@ -309,12 +314,16 @@ int main()
                     break;
 
                     case '4':
-
+                    printf("\nIngrese id de cliente:");
+                    scanf("%d",&dato);
+                    a = buscaClientePorId(dato);
+                    if(a.id==-1){
+                        printf("\nNo se encontro el cliente");
+                    }else{
+                    ardl = liquidarUnMesdeConsumos(ardl, a.id);
+                    }
                     break;
 
-                    case '5':
-
-                    break;
 
                     default:
                     printf("\nOpcion equivocada,Presione ESC para Volver al Inicio.\n");
@@ -418,24 +427,10 @@ void menuDeARDL()
     system("color 16");///despues lo modifico
     printf("\n\t\tArbol de listas\n");
     printf("\n1-Mostrar completo arbol de listas\n");
-    printf("\n2-Mostrar un arbol de cliente con su lista\n");
-    printf("\n3-Busca un cliente en el arbol\n");
-    printf("\n4-Borrar un nodo del arbol de clientes y sus consumos\n");
-    printf("\n5-Hacer facturacion de un mes de consumos a un cliente\n");
+    printf("\n2-Buscar un cliente en el arbol y su lista\n");
+    printf("\n3-Borrar un nodo del arbol de clientes y sus consumos\n");
+    printf("\n4-Hacer facturacion de un mes de consumos a un cliente\n");
     printf("\nPresione ESC para Salir\n");
 
 }
 
-void cargar50consumos(){
-     int veces = 50;
-     stCliente cli;
-     FILE* archi = fopen(AR_CLIENTES, "rb");
-
-     if(archi){
-        while(fread(&cli, sizeof(stCliente), 1, archi)>0){
-            cargaConsumosEspecificos(cli.id, veces);
-        }
-        fclose(archi);
-     }
-
-}

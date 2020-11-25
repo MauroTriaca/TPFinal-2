@@ -462,10 +462,10 @@
 1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\utilidades.c
 	"utilidades.h"
 
-1606310708 source:c:\users\mauro\desktop\tpf2\arbol.c
+1606334925 source:c:\users\mauro\desktop\tpf2\arbol.c
 	"arbol.h"
 
-1606310708 c:\users\mauro\desktop\tpf2\arbol.h
+1606333314 c:\users\mauro\desktop\tpf2\arbol.h
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
@@ -473,7 +473,7 @@
 	"archivoClientes.h"
 	"archivoConsumos.h"
 
-1606310708 c:\users\mauro\desktop\tpf2\lista.h
+1606333717 c:\users\mauro\desktop\tpf2\lista.h
 	<stdio.h>
 	<stdlib.h>
 	<malloc.h>
@@ -500,7 +500,7 @@
 1606318879 c:\users\mauro\desktop\tpf2\consumos.h
 	"clientes.h"
 
-1606310708 source:c:\users\mauro\desktop\tpf2\archivoclientes.c
+1606334534 source:c:\users\mauro\desktop\tpf2\archivoclientes.c
 	"archivoClientes.h"
 
 1606319007 source:c:\users\mauro\desktop\tpf2\archivoconsumos.c
@@ -519,7 +519,7 @@
 	"archivoClientes.h"
 	"utilidades.h"
 
-1606310708 c:\users\mauro\desktop\tpf2\utilidades.h
+1606335073 c:\users\mauro\desktop\tpf2\utilidades.h
 	"crudClientes.h"
 	"crudConsumos.h"
 
@@ -534,10 +534,10 @@
 	<stdlib.h>
 	<windows.h>
 
-1606310708 source:c:\users\mauro\desktop\tpf2\lista.c
+1606333793 source:c:\users\mauro\desktop\tpf2\lista.c
 	"lista.h"
 
-1606310708 source:c:\users\mauro\desktop\tpf2\main.c
+1606335326 source:c:\users\mauro\desktop\tpf2\main.c
 	<stdio.h>
 	<stdlib.h>
 	"clientes.h"
@@ -558,6 +558,6 @@
 1606310708 source:c:\users\mauro\desktop\tpf2\ordenamientosyestadisticas.c
 	"ordenamientosYestadisticas.h"
 
-1606310708 source:c:\users\mauro\desktop\tpf2\utilidades.c
+1606335140 source:c:\users\mauro\desktop\tpf2\utilidades.c
 	"utilidades.h"
 

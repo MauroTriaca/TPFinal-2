@@ -260,6 +260,25 @@ int sumardatosConsumidossListaRecursivoTernario(nodo* lista)
     return (lista)?lista->dato.datosConsumidos + sumardatosConsumidossListaRecursivoTernario(lista->siguiente):0;
 }
 
+/***
+* \brief Calcula suma todos  los  megabytes consumidos en un  mes.
+* \param Recibe un nodo(lista), un año, un mes
+* \return Retorna un entero.
+*/
+int cuentaTotal(nodo* lista, int anio, int mes){
+    nodo* seg = lista;
+    int mbsTotales;
+
+    if(seg){
+        while(seg){
+            if(seg->dato.anio == anio && seg->dato.mes == mes){
+                mbsTotales = mbsTotales + seg->dato.datosConsumidos;
+            }
+            seg = seg->siguiente;
+        }
+    }
+    return mbsTotales;
+}
 
 
 

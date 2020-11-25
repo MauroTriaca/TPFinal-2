@@ -239,8 +239,42 @@ nodoArbol* buscaClienteEnArbol(nodoArbol* arbol, int idCliente) ///busca cliente
 **************************************************************************/
 void mostrarNodoArdl(nodoArbol* ardl){
     mostrarUnClienteId(ardl->dato);
-    Sleep(2000);
     mostrarLista(ardl->lista);
-    Sleep(2000);
     printf("\n--");
+}
+
+/***
+* \brief Liquida un periodo(mes) de consumo del arbol de listas
+* \param Recibe un nodo Arbol, idCliente
+* \return Retorna un puntero a nodo Arbol.
+*/
+nodoArbol* liquidarUnMesdeConsumos(nodoArbol* arbol, int idCliente){
+
+    nodoArbol* encontrado;
+    int anio, mes;
+    int total;
+    if(arbol){
+
+          encontrado = buscaClienteEnArbol(arbol,idCliente);
+          if(encontrado)///Encontrado != NULL
+            {
+            printf("\nIngrese el anio que desea liquidar: ");
+            scanf("%d",&anio);
+            printf("\nIngrese el mes que desea liquidar: ");
+            scanf("%d",&mes);
+
+            total = cuentaTotal(encontrado->lista,anio,mes);
+            if (total > 0) {
+                imprimirFactura(encontrado->dato, total, anio,mes);
+                printf("\n Liquidacion exitosa...");
+                           }else {
+                                printf("\nEl cliente no registra ningun consumo en ese mes.");
+                                }
+                }else {///Encontrado == NULL
+                printf("\nNo existe ese cliente en el arbol.");
+                    }
+
+    }
+
+return arbol;
 }

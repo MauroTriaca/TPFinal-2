@@ -41,6 +41,8 @@ nodoArbol* buscaClienteEnArbol(nodoArbol* arbol, int idCliente);
 
 void mostrarNodoArdl(nodoArbol* ardl);
 
+nodoArbol* liquidarUnMesdeConsumos(nodoArbol* arbol, int idCliente);
+
 
 
 #endif // ARBOL_H_INCLUDED

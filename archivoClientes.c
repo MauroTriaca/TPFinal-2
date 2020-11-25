@@ -496,6 +496,28 @@ stCliente traeCliente(int id)
     }
 }
 
+stCliente buscaClientePorId(int id){
+    int flag=0;
+    stCliente c;
+    FILE *archi = fopen(AR_CLIENTES, "rb");
+    if(archi)
+    {
+        while(flag == 0 && fread(&c, sizeof(stCliente), 1,archi) > 0)
+        {
+            if(c.id==id)
+            {
+                flag=1;
+            }
+        }
+        fclose(archi);
+    }
+    if(flag==0)
+    {
+        c.id=-1;
+    }
+
+    return c;
+}
 
 
 
