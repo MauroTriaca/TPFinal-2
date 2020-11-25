@@ -1,6 +1,7 @@
 #ifndef CRUDCLIENTES_H_INCLUDED
 #define CRUDCLIENTES_H_INCLUDED
 #include "archivoClientes.h"
+#include "utilidades.h"
 
 void modificarCliMenus();///menu que maneja todo
 

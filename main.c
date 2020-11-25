@@ -11,15 +11,22 @@
 #include "crudConsumos.h"
 #include "ordenamientosYestadisticas.h"
 #include "utilidades.h"
+#include "lista.h"
+#include "arbol.h"
+
 
 ///funciones de menu
 void menuPrincipal();
 void Menu();
 void Submenu();
 void consumoMenu();
+void centrar_Texto(const char *texto, int y);
+
+void menuDeARDL();
 
 int main()
 {
+    nodoArbol* ardl = inicArbol();
     float promedio;
     int cantRegistros;
     int dato;
@@ -53,15 +60,17 @@ int main()
     char opcion;
     char opcion2;
     char opcionConsumo;
+    char opcionARDL;
 
     stCliente clientes[DIM_CLI];
     int vClientes=0;
     int clientesrandom=0;
 
+
      gotoxy(15,10);
 
-     system("color 70");
-     centrar_Texto("UTMOVIL\n\n\n\n\n\n\n\n\n\n\n\n\n\n",8);
+     system("color 1F");
+     centrar_Texto("UTNMOVIL\n\n\n\n\n\n\n\n\n\n\n\n\n\n",8);
      system("pause");
 
 
@@ -152,7 +161,7 @@ int main()
                     }
                     else
                     {
-                        printf("\nEl cliente con el apellido %s NO existe.\n",apellidoBuscado);
+                        printf("\nEl cliente con el apellido  %s NO existe.\n",apellidoBuscado);
                     }
                     break;
                 case '6':
@@ -227,9 +236,6 @@ int main()
                         modificarConsumosSubMenu();
                     break;
 
-                default:
-                    printf("\nOpcion equivocada,Presione ESC para Volver al Inicio.\n");
-                  break;
                case '7':
                 do{
                  printf("\nIngrese el mes para ver sus consumos: ");
@@ -267,16 +273,53 @@ int main()
                 ordenarArrayConsumosPorMes(consumoArray,validosConsumo);
                 validosDias=ordenarArrayConsumosPorDiaYMes(consumoArray,validosConsumo,arregloDeDias);
                 printf("\nConsumos Ordenados por dia-:\n");
-                ordenarSelDia(arregloDeDias,validosDias);///en este tengo los dias, tecnicamente es una copia del otro arreglo,pero
-                muestraConsumos(arregloDeDias,validosDias);///cuando tengamos que hacer la matriz, va a servir mucho tener copias.
+                ordenarSelDia(arregloDeDias,validosDias);///en este tengo los dias, tecnicamente es una copia del otro arreglo
+                muestraConsumos(arregloDeDias,validosDias);
                 break;
-                case 'a':
-
-                    break;
+                 default:
+                    printf("\nOpcion equivocada,Presione ESC para Volver al Inicio.\n");
+                  break;
                 }
-
             system("pause");
             }while(opcionConsumo!=ESC);
+         break;
+         case '3':
+            do{
+                system("cls");
+                menuDeARDL();
+                opcionARDL=getch();
+                system("cls");
+                switch(opcionARDL){
+                    case '1':
+                    printf("\nArbol de listas");
+                    ardl = cliente2Arbol(ardl);
+                    ardl = asignaConsumosArbol(ardl);
+                    preorder(ardl);
+                    break;
+
+                    case '2':
+
+                    break;
+
+                    case '3':
+
+                    break;
+
+                    case '4':
+
+                    break;
+
+                    case '5':
+
+                    break;
+
+                    default:
+                    printf("\nOpcion equivocada,Presione ESC para Volver al Inicio.\n");
+                    break;
+                }
+                system("pause");
+            }while(opcionARDL!=ESC);
+
          break;
         }
 
@@ -289,13 +332,14 @@ int main()
 
 void menuPrincipal()
 {
-    system("color F");
+    system("color 1F");
 
     centrar_Texto("Seleccione:",5);
     centrar_Texto("1-Clientes",8);
     centrar_Texto("2-Consumos",11);
+    centrar_Texto("3-Arbol de listas",14);
 
-    centrar_Texto("Presione ESC para Salir",15);
+    centrar_Texto("Presione ESC para Salir",18);
 
 }
 
@@ -310,7 +354,7 @@ void centrar_Texto(const char *texto, int y)
 ///
 void Menu()
 {
-    system("color A");
+    system("color 1A");
 
     printf("\n\t\tCLIENTES\n");
 
@@ -330,7 +374,7 @@ void Menu()
 }
 void consumoMenu()
 {
-    system("color E");
+    system("color 1E");
 
     printf("\n\t\tCONSUMOS\n");
 
@@ -351,7 +395,7 @@ void consumoMenu()
 void Submenu()
 {
 
-    system("color B");
+    system("color 1B");
     printf("\n\t\tSubMenu\n");
     printf("\n1-Mostrar todos los Clientes\n");
     printf("\n2-Mostrar Clientes Activos \n");
@@ -366,4 +410,17 @@ void Submenu()
 
 }
 
+void menuDeARDL()
+{
+
+    system("color 16");///despues lo modifico
+    printf("\n\t\tArbol de listas\n");
+    printf("\n1-Mostrar completo arbol de listas\n");
+    printf("\n2-Mostrar un arbol de cliente con su lista\n");
+    printf("\n3-Busca un cliente en el arbol\n");
+    printf("\n4-Borrar un nodo del arbol de clientes y sus consumos\n");
+    printf("\n5-Hacer facturacion de un mes de consumos a un cliente\n");
+    printf("\nPresione ESC para Salir\n");
+
+}
 

@@ -74,3 +74,391 @@
 1604780111 source:c:\users\administrador\desktop\tpf2\ordenamientosyestadisticas.c
 	"ordenamientosYestadisticas.h"
 
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\archivoclientes.c
+	"archivoClientes.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\archivoclientes.h
+	"clientes.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\clientes.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	"gotoxy.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\gotoxy.h
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\archivoconsumos.c
+	"archivoConsumos.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\archivoconsumos.h
+	"clientes.h"
+	"consumos.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\consumos.h
+	"clientes.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\clientes.c
+	"clientes.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\consumos.c
+	"consumos.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\crudclientes.c
+	"crudClientes.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\crudclientes.h
+	"archivoClientes.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\crudconsumos.c
+	"crudConsumos.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\crudconsumos.h
+	"archivoConsumos.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1606159496 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	"clientes.h"
+	"consumos.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+	"crudClientes.h"
+	"crudConsumos.h"
+	"ordenamientosYestadisticas.h"
+	"utilidades.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\ordenamientosyestadisticas.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\utilidades.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\ordenamientosyestadisticas.c
+	"ordenamientosYestadisticas.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\utilidades.c
+	"utilidades.h"
+
+1606141950 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-master\lista.c
+	"lista.h"
+
+1606141950 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"arbol.h"
+	"consumos.h"
+
+1606148870 c:\users\bruno\onedrive\escritorio\tpfinal-2-master\arbol.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"clientes.h"
+
+1606165808 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\archivoclientes.c
+	"archivoClientes.h"
+
+1606223970 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\archivoclientes.h
+	"clientes.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\clientes.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	"gotoxy.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\gotoxy.h
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\archivoconsumos.c
+	"archivoConsumos.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\archivoconsumos.h
+	"clientes.h"
+	"consumos.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\consumos.h
+	"clientes.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\clientes.c
+	"clientes.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\consumos.c
+	"consumos.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\crudclientes.c
+	"crudClientes.h"
+
+1606224052 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\crudclientes.h
+	"archivoClientes.h"
+	"utilidades.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\crudconsumos.c
+	"crudConsumos.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\crudconsumos.h
+	"archivoConsumos.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1606250932 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\lista.c
+	"lista.h"
+
+1606225012 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"ArchivoClientes.h"
+	"ArchivoConsumos.h"
+
+1606266157 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\arbol.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"clientes.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+
+1606261891 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	"clientes.h"
+	"consumos.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+	"crudClientes.h"
+	"crudConsumos.h"
+	"ordenamientosYestadisticas.h"
+	"utilidades.h"
+	"lista.h"
+	"arbol.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\ordenamientosyestadisticas.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\utilidades.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\ordenamientosyestadisticas.c
+	"ordenamientosYestadisticas.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\utilidades.c
+	"utilidades.h"
+
+1606266157 source:c:\users\mauro\downloads\tpfinal-2-master\tpfinal-2-master\arbol.c
+	"arbol.h"
+
+1606165808 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\archivoclientes.c
+	"archivoClientes.h"
+
+1606223970 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\archivoclientes.h
+	"clientes.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\clientes.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	"gotoxy.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\gotoxy.h
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\archivoconsumos.c
+	"archivoConsumos.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\archivoconsumos.h
+	"clientes.h"
+	"consumos.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\consumos.h
+	"clientes.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\clientes.c
+	"clientes.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\consumos.c
+	"consumos.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\crudclientes.c
+	"crudClientes.h"
+
+1606224052 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\crudclientes.h
+	"archivoClientes.h"
+	"utilidades.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\utilidades.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\crudconsumos.h
+	"archivoConsumos.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\crudconsumos.c
+	"crudConsumos.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1606268368 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\lista.c
+	"lista.h"
+
+1606268317 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"ArchivoClientes.h"
+	"ArchivoConsumos.h"
+
+1606268223 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	"clientes.h"
+	"consumos.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+	"crudClientes.h"
+	"crudConsumos.h"
+	"ordenamientosYestadisticas.h"
+	"utilidades.h"
+	"lista.h"
+	"arbol.h"
+
+1604780338 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\ordenamientosyestadisticas.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1606268223 c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\arbol.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"clientes.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\ordenamientosyestadisticas.c
+	"ordenamientosYestadisticas.h"
+
+1604780338 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\utilidades.c
+	"utilidades.h"
+
+1606268223 source:c:\users\bruno\onedrive\escritorio\tpfinal-2-remaster\tpfinal-2-master\arbol.c
+	"arbol.h"
+
+1606306322 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\arbol.c
+	"arbol.h"
+
+1606306320 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\arbol.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+	"clientes.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+
+1606307381 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"ArchivoClientes.h"
+	"ArchivoConsumos.h"
+
+1606223970 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\archivoclientes.h
+	"clientes.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\clientes.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<time.h>
+	"gotoxy.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\gotoxy.h
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\archivoconsumos.h
+	"clientes.h"
+	"consumos.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\consumos.h
+	"clientes.h"
+
+1606304251 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\archivoclientes.c
+	"archivoClientes.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\archivoconsumos.c
+	"archivoConsumos.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\clientes.c
+	"clientes.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\consumos.c
+	"consumos.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\crudclientes.c
+	"crudClientes.h"
+
+1606224052 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\crudclientes.h
+	"archivoClientes.h"
+	"utilidades.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\utilidades.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\crudconsumos.h
+	"archivoConsumos.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\crudconsumos.c
+	"crudConsumos.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1606307413 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\lista.c
+	"lista.h"
+
+1606309875 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	"clientes.h"
+	"consumos.h"
+	"archivoClientes.h"
+	"archivoConsumos.h"
+	"crudClientes.h"
+	"crudConsumos.h"
+	"ordenamientosYestadisticas.h"
+	"utilidades.h"
+	"lista.h"
+	"arbol.h"
+
+1604780338 c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\ordenamientosyestadisticas.h
+	"crudClientes.h"
+	"crudConsumos.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\ordenamientosyestadisticas.c
+	"ordenamientosYestadisticas.h"
+
+1604780338 source:c:\users\mauro\downloads\tpfinal-2-remaster_v2.0\tpfinal-2-remaster v2.0\tpfinal-2-master\utilidades.c
+	"utilidades.h"
+

@@ -20,6 +20,7 @@ int buscaUnNroMovilArchivo(int movil);
 ///devuelven el cliente
 stCliente buscaClientePorApellido(char apellido[]);
 stCliente buscaClientePorDni(int dni);
+stCliente buscaClientePorId(int id);
 
 int archivo2arrayBaja(stCliente a,stCliente c[DIM_CLI]);
 int archivo2arrayActivos(stCliente a,stCliente c[DIM_CLI]);
@@ -29,5 +30,7 @@ int buscaCliente(int id);
 ///busca la posicion el cliente si existe
 int buscaPosicion(int id);
 stCliente traeCliente(int id);
+
+void mostrarArchivoClientesActivos();
 
 #endif // ARCHIVOCLIENTES_H_INCLUDED
