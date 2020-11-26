@@ -42,4 +42,6 @@ int sumardatosConsumidossListaRecursivoTernario(nodo* lista);
 
 int cuentaTotal(nodo* lista, int anio, int mes);
 
+nodo* borrarListaConFiltro(nodo* lista, int id);
+
 #endif // LISTAEMPS_H_INCLUDED

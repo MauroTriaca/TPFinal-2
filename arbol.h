@@ -7,6 +7,7 @@
 #include "clientes.h"
 #include "archivoClientes.h"
 #include "archivoConsumos.h"
+#include "utilidades.h"
 
 /// estructura de datos
 
@@ -43,6 +44,9 @@ void mostrarNodoArdl(nodoArbol* ardl);
 
 nodoArbol* liquidarUnMesdeConsumos(nodoArbol* arbol, int idCliente);
 
-
+int esHoja(nodoArbol* arbol);
+nodoArbol* masDerecho(nodoArbol* arbol);
+nodoArbol* masIzquierdo(nodoArbol* arbol);
+nodoArbol* borrarNodoArbol(nodoArbol* arbol,int dato);
 
 #endif // ARBOL_H_INCLUDED

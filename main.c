@@ -205,8 +205,8 @@ int main()
                     cargaConsumosTeclado();
                     break;
                 case '2':
-                    cargar50consumos();
-                    printf("\nSe cargaron automaticamente 50 consumos a  cada cliente, si quiere mas siga la ejecucion\n");
+                    ///cargar30consumos();///funcion usa para cagar 30 consumos a cada cliente
+                    printf("\nSe cargaron automaticamente 30 consumos a  cada cliente, si quiere mas siga la ejecucion\n");
                     printf("\nIngrese la Cantidad de consumos que quiera crear: ");
                     scanf("%d",&veces);
                     centrar_Texto("PRESIONE UNA TECLA Y ESPERE A QUE TERMINE DE CARGAR\n\n",8);
@@ -306,11 +306,25 @@ int main()
                     printf("\nIngrese id de cliente:");
                     scanf("%d",&dato);
                     arbolAux = buscaClienteEnArbol(ardl,dato);
-                    mostrarNodoArdl(arbolAux);
+                    if(arbolAux){
+                     mostrarNodoArdl(arbolAux);
+                    }else{
+                     printf("\nEl cliente no existe en el arbol\n");
+                    }
                     break;
 
                     case '3':
+                    printf("\nIngrese id de cliente:");
+                    scanf("%d",&dato);
+                    arbolAux = buscaClienteEnArbol(ardl,dato);
+                    if(arbolAux){
+                    arbolAux->lista = borrarListaConFiltro(arbolAux->lista, dato);
+                    ardl = borrarNodoArbol(ardl, dato);
+                    }else{
+                     printf("\nEl cliente no existe en el arbol\n");
+                    }
 
+                    printf("\nEl cliente fue borrado existosamente...\n");
                     break;
 
                     case '4':
@@ -391,7 +405,7 @@ void consumoMenu()
     printf("\n\t\tCONSUMOS\n");
 
     printf("\n1-Cargar consumos Por Teclado\n");
-    printf("\n2-Cargar 50 Consumos Aleatorios a todos los clientes y luego cargar mas\n");
+    printf("\n2-Cargar  Consumos Aleatorios a todos los clientes\n");
     printf("\n3-Mostrar todos los consumos\n");
     printf("\n4-Buscar Un Cliente por Fecha\n");
     printf("\n5-Cuenta Consumos\n");

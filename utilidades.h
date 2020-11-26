@@ -8,7 +8,7 @@ int validaEmail(char email[]);
 
 void mostrarArray(int a[],int v);
 
-void cargar50consumos();
+void cargar30consumos();
 
 void imprimirFactura(stCliente cli, int total,int anio, int mes);
 void factura(int cantidadCons, float precio);

@@ -125,6 +125,21 @@ nodo* borrarLista(nodo* lista){///la unica manera de elimir una lista es nodo po
 
    return seg;
 }
+///borra nodos de la lista, filtrando por la id
+nodo* borrarListaConFiltro(nodo* lista, int id){///la unica manera de elimir una lista es nodo por nodo
+
+      nodo* seg = lista;
+      nodo* proximo;
+
+      while(seg){
+
+        proximo = seg->siguiente;
+        free(seg);
+        seg = proximo;
+      }
+
+   return seg;
+}
 
 /*********************************************************************//**
 *

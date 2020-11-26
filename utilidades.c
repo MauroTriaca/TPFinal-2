@@ -33,8 +33,8 @@ void mostrarArray(int a[],int v){
 }
 
 ///carga a 50 consumos por cliente
-void cargar50consumos(){
-     int veces = 50;
+void cargar30consumos(){
+     int veces = 30;
      stCliente cli;
      FILE* archi = fopen(AR_CLIENTES, "rb");
 

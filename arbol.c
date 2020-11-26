@@ -278,3 +278,74 @@ nodoArbol* liquidarUnMesdeConsumos(nodoArbol* arbol, int idCliente){
 
 return arbol;
 }
+
+int esHoja(nodoArbol* arbol){
+    int flag = 0;
+    if(!arbol->der && !arbol->izq){
+        flag = 1;
+    }
+    else{
+        flag = 0;
+    }
+  return flag;
+}
+
+
+nodoArbol* masDerecho(nodoArbol* arbol)
+{
+    nodoArbol* seg = arbol;
+    while(seg->der)
+    {
+        seg = seg->der;
+    }
+    return seg;
+}
+
+nodoArbol* masIzquierdo(nodoArbol* arbol)
+{
+    nodoArbol* seg = arbol;
+    while(seg->izq)
+    {
+        seg = seg->izq;
+    }
+    return seg;
+}
+
+nodoArbol* borrarNodoArbol(nodoArbol* arbol,int dato)
+{
+    nodoArbol* aux = arbol;
+    if(aux)
+    {
+        if(dato == aux->dato.id)
+        {
+            if(aux->izq)
+            {
+                nodoArbol* masDer = masDerecho(aux->izq);
+                aux->dato = masDer->dato;
+                aux->izq = borrarNodoArbol(aux->izq,masDer->dato.id);
+            }
+            else if(aux->der)
+            {
+                nodoArbol* masIzq = masIzquierdo(aux->der);
+                aux->dato = masIzq->dato;
+                aux->der = borrarNodoArbol(aux->der,masIzq->dato.id);
+            }
+            else if(esHoja(aux))
+            {
+                free(aux);
+                aux = NULL;
+            }
+
+        }
+        else if(dato > aux->dato.id)
+        {
+            aux->der = borrarNodoArbol(aux->der,dato);
+        }
+        else if(dato < aux->dato.id)
+        {
+            aux->izq = borrarNodoArbol(aux->izq,dato);
+        }
+
+    }
+return aux;
+}
